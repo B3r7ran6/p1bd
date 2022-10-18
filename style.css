@@ -1,0 +1,324 @@
+/*INIT BROWSER*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTS */
+
+@font-face {
+     font-family: "Ubuntu-Regular";
+     src: url("/fonts/Ubuntu-Regular.ttf");
+     }
+
+@font-face { font-family: "Vollkorn-Regular";
+     src: url("/fonts/Vollkorn-Regular.ttf"); }
+
+/* STYLES GENERAUX */
+h1{
+    color: #9999ff;
+    font-size: 36px;
+    font-family: "Ubuntu-Regular", "Arial", "Helvetica", "sans-serif";
+    padding-left: 1rem;
+    }
+h2{
+    font-size: 30px;
+    font-family: "Ubuntu-Regular", "Arial", "Helvetica", "sans-serif";
+    color: #c5ff99;
+    text-align: center;
+}
+h3{
+    font-size: 24px;
+    font-family: "Ubuntu-Regular", "Arial", "Helvetica", "sans-serif";
+    color: #c5ff99;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
+    color: #232323;
+    margin: 0.5rem;
+}
+li{
+    font-size: 20px;
+    font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
+    list-style: none;
+}
+
+
+/* a{
+    font-size: 20px;
+    font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
+    text-decoration: none;
+} */
+.wrapper{
+    padding: 1rem;
+}
+.formButton{
+    color: #9cff99;
+    background-color: #5bc0de;
+    border: solid #cccccc 1px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+}
+.formButton :hover {
+    background-color: rgba (255,0,0,1);
+}
+article{
+    height: auto;
+    background-color: #95c5ff;
+    margin: 1rem;
+    border: solid #232323 1px;
+    border-radius: 15px;
+    text-align: justify;
+}
+.presentation{
+    background-color: #95c5ff;
+    margin: 1rem;
+    border: solid #232323 1px;
+    border-radius: 15px;
+}
+
+/* STYLE DU BODY */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+}
+
+/* STYLE DU HEADER */
+header{
+    grid-row: 1/2;
+    background-color: #c5ff99;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-between;*/
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+} 
+
+/* MENU BURGER */
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #9999ff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+/* nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 1rem;
+    /* padding-top: 60px; */
+    
+/*    
+}
+
+nav ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+/* .menu{
+    color: #9999ff;
+} */
+
+/* STYLE DU MAIN */
+main {
+    background-color: #95c5ff;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid #232323 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+
+/*  STYLE DU SECTION */
+.articles{
+    background-color: #9999ff;
+    height: auto;
+    text-align: center;
+    border: solid #232323 1px;
+    border-radius: 15px;
+    order: 1;
+    flex-shrink: 1;
+    flex-grow: 4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.mainyoga{
+    display: inline-block;
+    justify-content: center;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+.prayanama{
+    margin: 2rem;
+}
+
+/* STYTLE DU ASIDE */
+
+.sidebar{
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between; */
+    background-color: #9999ff;
+    order: 2;
+    flex-shrink: 8;
+    /* padding: 1rem; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: solid #232323 1px;
+    border-radius: 15px;
+}
+@media screen and (min-width: 728px) {
+    main{
+        flex-direction: initial;
+    }
+    .articles {
+        width: 70%;
+    } 
+    .sidebar {
+        width: 30%;
+    }
+}
+
+.chakra{
+    align-self: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.salutation{
+    /* display: block; */
+    /* justify-content: center; */
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.mudra{
+    align-self: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}
+
+/* mudra desktop */
+/* .mudra{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    margin: 1rem;
+    border-radius: 15px;
+} */
+
+
+.mantra{
+    display: inline-block;
+    justify-content: center;    
+    border-radius: 15px;
+    width: 100%;
+}
+.pmantra{
+    text-align: center;
+}
+.newsletter{
+    text-align: center;   
+    border: solid #232323 1px;
+    background-color: #c5ff99;
+    margin: 1rem;
+    border-radius: 15px;
+}   
+.lanewsletter{
+    color: #9999ff;
+    font-size: 24;
+}
+
+.from{    
+    background-color: #9cff99;
+    border: solid #cccccc 1px;
+    margin: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+input[type=text] {
+    padding: 1rem;
+    border: 2px solid #9999ff;
+    border-radius: 25px;
+    background-image: url('images/iconMail.svg');
+    background-repeat: no-repeat;    
+  }
+  
+
+/* STYLE DU FOOTER */
+footer{
+    grid-row: 3/4;
+    background-color: #c5ff99;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 15rem;
+    background-color: #9cff99;    
+    border: #cccccc solid 1px;
+    border-radius: 15px;
+    margin: 1rem;
+}
+.copyR{
+    color: #9999ff;
+    font-size: 16px;
+    font-family: "Ubuntu-Regular", "Arial", "Helvetica", "sans-serif";
+}
+.copyrights{
+    margin-right: 1rem;
+}
+.logoFacebook{
+    margin-right: 1rem;
+}
+
+
