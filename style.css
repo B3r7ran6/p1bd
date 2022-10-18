@@ -74,6 +74,7 @@ article{
     height: auto;
     background-color: #95c5ff;
     margin: 1rem;
+    padding: 0.5rem;
     border: solid #232323 1px;
     border-radius: 15px;
     text-align: justify;
@@ -186,7 +187,10 @@ main {
     height: auto;
 }
 .prayanama{
-    margin: 2rem;
+    margin: 1.5rem;
+}
+.yogas{
+    margin: 1.5rem;
 }
 
 /* STYTLE DU ASIDE */
