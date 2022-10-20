@@ -178,6 +178,7 @@ main {
     flex-grow: 4;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 .mainyoga{
     display: inline-block;
