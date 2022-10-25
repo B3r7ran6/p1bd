@@ -9,11 +9,11 @@
 
 @font-face {
      font-family: "Ubuntu-Regular";
-     src: url("/fonts/Ubuntu-Regular.ttf");
+     src: url("fonts/Ubuntu-Regular.ttf");
      }
 
 @font-face { font-family: "Vollkorn-Regular";
-     src: url("/fonts/Vollkorn-Regular.ttf"); }
+     src: url("fonts/Vollkorn-Regular.ttf"); }
 
 /* STYLES GENERAUX */
 h1{
@@ -35,13 +35,13 @@ h3{
     text-align: center;
 }
 p{
-    font-size: 20px;
+    font-size: 1rem;
     font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
     color: #232323;
     margin: 0.5rem;
 }
 li{
-    font-size: 20px;
+    font-size: 1rem;
     font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
     list-style: none;
 }
@@ -55,7 +55,7 @@ li{
 .wrapper{
     padding: 1rem;
 }
-.formButton{
+button{
     color: #9cff99;
     background-color: #5bc0de;
     border: solid #cccccc 1px;
@@ -180,6 +180,19 @@ main {
     margin-bottom: 1rem;
     margin-right: 1rem;
 }
+
+/*    TOGGLE KNOW-MORE BUTTON     */
+
+.show-more1{
+    display: none;
+}
+.show-more2{
+    display: none;
+}
+.is-visible{
+    display: block;
+}
+
 .mainyoga{
     display: inline-block;
     justify-content: center;
@@ -196,15 +209,10 @@ main {
 
 /* STYTLE DU ASIDE */
 
-.sidebar{
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-between; */
+.sidebar{    
     background-color: #9999ff;
     order: 2;
-    flex-shrink: 8;
-    /* padding: 1rem; */
+    flex-shrink: 8;    
     margin-top: 1rem;
     margin-bottom: 1rem;
     border: solid #232323 1px;
@@ -228,6 +236,9 @@ main {
         top: 100px;
         right: 0;
         background-color: rgba(153, 153, 255, 0.9);
+    }
+    .more-show {
+        display: block;
     }
 }
 
