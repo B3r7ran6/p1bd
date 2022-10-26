@@ -23,7 +23,7 @@
     <div>
       <h1> My Yoga Blog </h1>
       <nav>
-        <div class="burger-menu">
+        <div id="burger" class="burger-menu" onclick="openCloseNav(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
@@ -31,8 +31,8 @@
         <ul class="navBarLinks">
           <li><a class="menu" href="#presentation">Présentation</a></li>
           <li><a class="menu" href="#actualite">L'actualité</a></li>
-          <li><a class="menu" href="#salutation">Salutation de la semaine</a></li>
-          <li><a class="menu" href="#mantra">Mantra de la semaine</a></li>
+          <li><a class="menu" href="#salutations">Salutation de la semaine</a></li>
+          <li><a class="menu" href="#mantras">Mantra de la semaine</a></li>
           <li><a class="menu" href="#oldposts">Anciens posts</a></li>
         </ul>
       </nav>
@@ -54,7 +54,7 @@
       </div>
       <!--end of DIV wrapper-->
 
-      <section class="presentation">
+      <section id="presentation" class="presentation">
 
         <h2> la découverte du yoga</h2>
 
@@ -140,6 +140,8 @@
           <h3>Mon alimentation</h3>
           <p>De vous à moi, l'alimentation "yogique" ne me convient pas. Mais tout d'abord je vais vous éclairer sur les
             bases de cette alimentation.</p>
+            <button class="know-more-btn2">En savoir plus...</button>
+          <div class="show-more2">
           <p>Elle est orientée via les trois gunas. Que sont ces gunas? Dans l'univers non manifesté, l'énergie possède
             trois qualités appelées "gunas" qui coexistent en équilibre. Sattva: la pureté, Rajas : l'activité et Tamas
             : l'obscurité, l'inertie. Quand une énergie prend forme, une des trois qualités prédomine. Donc chaque
@@ -166,6 +168,7 @@
           <P>Vous comprendrez, je suis sûr, que pour le français que je suis, habitué dès mon plus jeune âge à notre
             gastronomie, et plus tard à celles du monde entier, il m'est très difficile de me priver ne serait-ce que
             des épices et autres condiments!!!</P>
+            </div>
 
         </article>
 
@@ -178,7 +181,9 @@
             mode, et de nouveaux types de yoga apparaissent régulièrement. Finalement, on ne parle pas d’un yoga au
             singulier mais de yogas au pluriel. Ceux-ci composent tout un paysage au sein duquel les novices ont du mal
             à se repérer. Cet article fait le point sur les principaux (et les plus sérieux) types de yoga. </p>
-          <ul>
+            <button class="know-more-btn1">En savoir plus...</button>
+          <div class="show-more1">
+            <ul>
             <li class="yogas">Le Raja yoga : Le Raja yoga est l'une des quatre écoles classiques de yoga aux côtés de
               Jnana (connaissance ou auto-apprentissage), Bhakti (dévotion) et Karma (action), chacune offrant un chemin
               vers le moksha (libération spirituelle) et la réalisation de soi. En substance, le Raja yoga est le yoga
@@ -257,10 +262,10 @@
               proposer une autre manière de relier l’esprit au corps. En yin yoga, par la pratique d’une dizaine de
               postures, on vous invite à prendre conscience des méridiens du corps, associés à des zones du corps ou des
               organes pour y faire circuler l’énergie, le chi, et accéder à l’équilibre physique et moral.</li>
-
           </ul>
 
           <p>Quel que soit le type de yoga, les bienfaits sont au rendez-vous !</p>
+        </div>
 
         </article>
 
@@ -344,7 +349,7 @@
       </div>
       <!--end of DIV wrapper-->
 
-      <article class="salutation">
+      <article id="salutation" class="salutation">
 
         <h2>Salutation de la semaine :</h2>
         <h3>salutation au soleil</h3>
@@ -428,7 +433,7 @@
     </div>
     <!--end of DIV copyright-->
 
-    <a href="#"><img class="logoFacebook" src="images/face.svg" title="facebook" width="30px" height="30px"
+    <a href="facebook.com" target="_blank"><img class="logoFacebook" src="images/face.svg" title="facebook" width="30px" height="30px"
         alt="logo facebook"></a>
 
   </footer>
