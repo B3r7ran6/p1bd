@@ -46,7 +46,7 @@ li{
     font-size: 1rem;
     font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
     list-style: none;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
 }
 .wrapper{
     padding: 1rem;
@@ -87,6 +87,7 @@ article{
 }
 
 
+
 /* STYLE DU BODY */
 body {
     display: grid;
@@ -105,22 +106,6 @@ header{
 } 
 header h1 {
     display: block;
-}
-.navBarLinks {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    /* height: calc(100vh - 100px); */
-    height: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background-color: rgba(153, 153, 255, 0.9);    
-}
-.navBarLinks.open {
-    display: flex;
 }
 
 
@@ -161,6 +146,9 @@ header h1 {
     top: 100px;
     right: 0;
     background-color: rgba(153, 153, 255, 0.7);
+}
+.navBarLinks.open {
+    display: flex;
 }
 a.menu {
     font-size: 1.5rem;
