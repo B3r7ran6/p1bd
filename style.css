@@ -1,13 +1,13 @@
 /*INIT BROWSER*/
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
     box-sizing: border-box;
     text-decoration: none;
 }
 
-/* FONTS */
 
+/* FONTS */
 @font-face {
      font-family: "Ubuntu-Regular";
      src: url("fonts/Ubuntu-Regular.ttf");
@@ -15,6 +15,7 @@
 
 @font-face { font-family: "Vollkorn-Regular";
      src: url("fonts/Vollkorn-Regular.ttf"); }
+
 
 /* STYLES GENERAUX */
 h1{
@@ -45,14 +46,8 @@ li{
     font-size: 1rem;
     font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
     list-style: none;
+    padding-bottom: 1rem;
 }
-
-
-/* a{
-    font-size: 20px;
-    font-family: "Vollkorn-Regular", "Arial", "Helvetica", "sans-serif";
-    text-decoration: none;
-} */
 .wrapper{
     padding: 1rem;
 }
@@ -66,10 +61,14 @@ button{
     margin: 1rem;
     font-size: 1rem;
     text-align: center;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #000;    
 }
-.formButton :hover {
-    background-color: rgba (255,0,0,1);
+button:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgb(238, 2, 254);
+    transform: scale(1.2);
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgb(238, 2, 254);  
 }
 article{
     height: auto;
@@ -87,12 +86,14 @@ article{
     border-radius: 15px;
 }
 
+
 /* STYLE DU BODY */
 body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 100px;
 }
+
 
 /* STYLE DU HEADER */
 header{
@@ -102,63 +103,58 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
 } 
-
 header h1 {
     display: block;
 }
-
-
 .navBarLinks {
     display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+    height: 100%;
     position: absolute;
     top: 100px;
     left: 0;
-    background-color: rgba(153, 153, 255, 0.9);
+    background-color: rgba(153, 153, 255, 0.9);    
 }
-
 .navBarLinks.open {
     display: flex;
 }
 
-/* MENU BURGER */
 
+/* MENU BURGER */
 .burger-menu {
     display: inline-block;
     cursor: pointer;
     margin-left: 1rem;
-  }
-  
+  }  
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #9999ff;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
+  }  
   .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
-  }
-  
+  }  
   .change .bar2 {opacity: 0;}
   
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
 
-  /* NAV BAR LINKS */
 
+  /* NAV BAR LINKS */
   .navBarLinks {
     display: none;
     flex-direction: column;
     padding-top: 2rem;
+    margin-left: 1rem;
     text-align: center;
-    gap: 5rem;
+    gap: 1rem;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -171,27 +167,6 @@ a.menu {
     color: antiquewhite;
 }
 
-
-
-/* nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 1rem;
-    /* padding-top: 60px; */
-    
-/*    
-}
-
-nav ul li {
-    margin-left: 10px;
-    margin-right: 10px;
-} */
-
-/* .menu{
-    color: #9999ff;
-} */
 
 /* STYLE DU MAIN */
 main {
@@ -210,8 +185,7 @@ main {
 /*  STYLE DU SECTION */
 .articles{
     background-color: #9999ff;
-    height: auto;
-    text-align: center;
+    height: auto;   
     border: solid #232323 1px;
     border-radius: 15px;
     order: 1;
@@ -219,21 +193,34 @@ main {
     flex-grow: 4;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* margin-right: 1rem; */
 }
 
-/*    TOGGLE BURGER AND KNOW-MORE BUTTON      */
 
+/*    TOGGLE BURGER AND KNOW-MORE BUTTON      */
 .show-more1{
     display: none;
 }
 .show-more2{
     display: none;
 }
+.show-more3{
+    display: none;
+}
+.show-more4{
+    display: none;
+}
+.show-more5{
+    display: none;
+}
+.show-more6{
+    display: none;
+}
+.show-more7{
+    display: none;
+}
 .is-visible{
     display: block;
 }
-
 .mainyoga{
     display: inline-block;
     justify-content: center;
@@ -248,8 +235,8 @@ main {
     margin: 1.5rem;
 }
 
-/* STYTLE DU ASIDE */
 
+/* STYTLE DU ASIDE */
 .sidebar{    
     background-color: #9999ff;
     order: 2;
@@ -259,7 +246,7 @@ main {
     border: solid #232323 1px;
     border-radius: 15px;
 }
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 800px) {
     .burger-menu {
         display: none;
     }
@@ -275,19 +262,19 @@ main {
     nav {
         width: auto;
     }
-    .navBarLinks {
+    .navBarLinks {        
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
+        flex-direction: row;        
+        /* align-items: center; */
+        /* width: 100%; */
         height: initial;
         position: initial;
-        background: none;
-        
-    }
-    .navBarLinks li{
-        margin-right: 1rem;
+        background: none;        
+    }    
+    a.menu{
+        width: 6rem;
+        font-size: 1rem;
+        color: #9999ff;
     }
     .more-show {
         display: block;
@@ -304,12 +291,10 @@ main {
     width: 100%;
     height: auto;
 }
-
 .salutation{    
     margin: 1rem;
     border-radius: 15px;
 }
-
 .mudra{
     align-self: center;
     justify-content: center;
@@ -317,18 +302,6 @@ main {
     width: 100%;
     height: auto;
 }
-
-/* mudra desktop */
-/* .mudra{
-    display: inline-block;
-    justify-content: center;
-    width: 100%;
-    height: 20rem;
-    margin: 1rem;
-    border-radius: 15px;
-} */
-
-
 .mantra{
     display: inline-block;
     justify-content: center;    
@@ -347,26 +320,28 @@ main {
 }   
 .lanewsletter{
     color: #9999ff;
-    font-size: 24;
+    font-size: 1.5rem;
 }
 
-.from{    
+/* .from{    
     background-color: #9cff99;
     border: solid #cccccc 1px;
     margin: 1rem;
     align-items: center;
     padding-bottom: 1rem;
-}
+} */
 
-input[type=text] {
+input[type=text] {    
     padding: 1rem;
     border: 2px solid #9999ff;
     border-radius: 25px;
     background-image: url('images/iconMail.svg');
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    width: 99%;       
   }
   
-
+  
 /* STYLE DU FOOTER */
 footer{
     grid-row: 3/4;
@@ -398,5 +373,10 @@ footer{
 .logoFacebook{
     margin-right: 1rem;
 }
-
+.scroll-top{
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    top:90vh;
+}
 
