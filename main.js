@@ -72,7 +72,7 @@ document.querySelector("form").addEventListener("submit", function (e)
     var email = document.getElementById("email").value;
 
     if (checkEmail(email)) {
-        alert('Adresse e-mail valide');
+        alert('Adresse e-mail valide, merci pour votre inscription.');
     } else {
         alert('Adresse e-mail non valide');
     }
